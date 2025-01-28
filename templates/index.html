@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Controller</title>
+</head>
+<body>
+    <h1>Fuzzy Logic Traffic Controller</h1>
+    <form action="/evaluate" method="POST">
+        <label for="traffic_density">Traffic Density (0-100):</label>
+        <input type="number" name="traffic_density" min="0" max="100" required><br><br>
+
+        <label for="queue_length">Queue Length (0-50):</label>
+        <input type="number" name="queue_length" min="0" max="50" required><br><br>
+
+        <button type="submit">Evaluate</button>
+    </form>
+</body>
+</html>
